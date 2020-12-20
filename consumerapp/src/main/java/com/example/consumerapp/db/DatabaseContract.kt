@@ -5,7 +5,7 @@ import android.provider.BaseColumns
 
 object DatabaseContract {
 
-    const val AUTHORITY = "com.example.consumerapp"
+    const val AUTHORITY = "com.example.mynotesapp"
     const val SCHEME = "content"
 
     class NoteColumns : BaseColumns {
