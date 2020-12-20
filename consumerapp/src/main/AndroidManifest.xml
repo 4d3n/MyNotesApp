@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.consumerapp">
 
-    <permission android:name="com.dicoding.mynotesapp.READ_DATABASE" android:protectionLevel="normal"/>
-    <permission android:name="com.dicoding.mynotesapp.WRITE_DATABASE" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.example.mynotesap.READ_DATABASE" />
+    <uses-permission android:name="com.example.mynotesap.WRITE_DATABASE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNotesApp">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,5 +22,9 @@
         </activity>
         <activity android:name=".NoteAddUpdateActivity" />
     </application>
+
+    <queries>
+        <package android:name="com.example.mynotesapp" />
+    </queries>
 
 </manifest>
